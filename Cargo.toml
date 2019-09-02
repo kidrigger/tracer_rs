@@ -1,0 +1,7 @@
+[package]
+name = "tracer_rs"
+version = "0.1.0"
+authors = ["Anish <anishbhobe@hotmail.com>", "Ronak <r.r.n.harkhani@gmail.com"]
+edition = "2018"
+
+[dependencies]
