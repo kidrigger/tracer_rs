@@ -1,3 +1,5 @@
+mod vec3;
+
 use std::env;
 
 const DEFAULT_WIDTH: u32 = 200;
@@ -63,6 +65,4 @@ fn main() {
             println!("{} {} 0", r, g);
         }
     }
-
-    println!("Hello, Raytracing!");
 }
