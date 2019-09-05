@@ -1,6 +1,9 @@
+mod ray;
 mod vec3;
 
+use ray::Ray;
 use std::env;
+use vec3::Vec3;
 
 const DEFAULT_WIDTH: u32 = 200;
 const DEFAULT_HEIGHT: u32 = 100;

@@ -5,8 +5,8 @@ use std::ops::Mul;
 use std::ops::Sub;
 
 #[derive(Copy, Clone)]
-struct Vec3 {
-    e: [f32; 3],
+pub struct Vec3 {
+    pub e: [f32; 3],
 }
 
 impl Vec3 {
@@ -98,6 +98,14 @@ impl Vec3 {
 
     pub fn sqr_length(&self) -> f32 {
         self.e[0] * self.e[0] + self.e[1] * self.e[1] + self.e[2] * self.e[2]
+    }
+
+    pub fn normalize(&mut self) {
+        *self = *self / self.length();
+    }
+
+    pub fn normalized(self) -> Vec3 {
+        self / self.length()
     }
 }
 
